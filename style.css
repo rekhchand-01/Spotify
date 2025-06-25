@@ -293,6 +293,12 @@ body{
     border-radius: 5px;
     width: calc(75vw - 20px);
 }
+
+.playbar:hover{
+    background-color: rgba(255, 255, 254, 0.5);
+    color: black;
+}
+
 .songButtons img{
     width: 30px;
     cursor: pointer;
@@ -358,7 +364,7 @@ body{
 .vol:has(input:hover) .volimg {
     transform: translateX(-2vw) scale(1.1);
 }
-.vol img:hover{
+.volimg:hover{
     transform: translateX(-2vw) scale(1.1);
 }
 
@@ -498,21 +504,26 @@ body{
         gap:10px;
     }
     .vol img{
-        position:relative;
         left: 0vw;
-        opacity: 1;
+        opacity: 0.8;
     }
     .vol input{
+        width: clamp(35px, 10vw, 120px);
         pointer-events: auto;
         position: relative;
-        opacity: 1;
+        opacity: 0.8;
     }
-    .vol:hover input {
+    .vol:has(img:hover) .volinput,.volinput:hover {
+        transform: none !important;
+    }
+    
+    .vol:has(input:hover) .volimg,
+    .volimg:hover{
         transform: none;
         opacity: 1;
         pointer-events: auto;
     }
-    .vol:hover img {
+    .volimg:hover{
         transform: scale(1.1);
-    }
+    }   
 }
