@@ -1,0 +1,57 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-items{
+    align-items: center;
+}
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.bg-grey{
+    background-color: #121212;
+}
+.invert{
+    filter: invert(1);
+}
+.m-1{
+    margin: 5px;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.rounded{
+    border-radius: 7px;
+}
+.p-1{
+    padding: 10px;
+}
+::-webkit-scrollbar{/* scrollbar container */
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{/* styles thumb */
+    opacity: 0;
+    background-color: #333;
+}
+::-webkit-scrollbar-track{/* track area for thumb movement */
+    background-color: #222;
+}
+/* .play:hover{
+    animation: appear 0.3s ease-out 0s 1 normal forwards;
+}
+@keyframes appear {
+    from{
+        right: 25px;
+        top: 125px;
+        opacity: 0;
+    }
+    to{
+        right: 25px;
+        top: 110px;
+        opacity: 1;  
+    }
+} */
